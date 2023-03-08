@@ -1,0 +1,86 @@
+.flip-card {
+    width: 500px;
+    height: 500px;
+    perspective: 1000px;
+    margin-left: 430px;
+    margin-top: 70px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 5px 10px 8px #888888;
+    }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    box-shadow: 5px 10px 8px #888888;
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    box-shadow: 5px 10px 8px #888888;
+  }
+  
+  .flip-card-front {
+    background-image:url('https://images.hdqwalls.com/wallpapers/my-best-casette-playlist-5k-za.jpg');
+    background-size: 500px 250px;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    transform: rotateY(180deg);
+    background-image: url('https://i.gifer.com/CH7i.gif');
+    background-position: 80px;
+  }
+  p{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: Candara;
+    padding-top: 11px;
+    padding-left: 20px;
+  }
+  h1{
+    padding-top: 179px;
+    font-size: 50px;
+    font-family: Candara;
+    color: black;
+  }
+
+.button-89 {
+  --b: 3px;  
+  --s: .45em; 
+  --color: #ffffff;
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top:325px ;
+  margin-left: 20px;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  color: black;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
